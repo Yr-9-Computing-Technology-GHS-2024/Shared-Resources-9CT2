@@ -52,3 +52,24 @@ else:
 mytuple = ("apple", "banana", "cherry")
 for i in mytuple:
   print(i)
+
+x = "this will output the number of items in a string or list"
+print(len(x))
+
+inp = input("this will become a list ")
+inp.split()
+print(inp)
+
+inp = input("your input will be changed ")
+inp = inp.replace(inp[0:],"this has replaced your input")
+print(inp)
+
+mylist = ["this", "will", "be", "sorted"]
+mylist.sort()
+print(mylist)
+
+inp = int(input("Number? "))
+if inp == 3:
+    print("that is equals to")
+elif inp != 5:
+    print("that is not equal to")
