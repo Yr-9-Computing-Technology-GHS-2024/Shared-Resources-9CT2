@@ -73,3 +73,13 @@ if inp == 3:
     print("that is equals to")
 elif inp != 5:
     print("that is not equal to")
+
+data = input("input in any data type: ")
+print(type(data))
+
+txt = input("input text: ")
+x = txt.find("a")
+if x == 1:
+    print("this has a")
+elif x == -1:
+    print("this does not have a")
