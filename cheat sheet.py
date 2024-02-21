@@ -35,9 +35,9 @@ list.append(1)
 print(list)
 
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 p1 = Person("John", 36)
 print(p1.name)
 print(p1.age)
@@ -76,10 +76,3 @@ elif inp != 5:
 
 data = input("input in any data type: ")
 print(type(data))
-
-txt = input("input text: ")
-x = txt.find("a")
-if x == 1:
-    print("this has a")
-elif x == -1:
-    print("this does not have a")
