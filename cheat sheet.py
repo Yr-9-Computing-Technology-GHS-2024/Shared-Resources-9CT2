@@ -1,13 +1,14 @@
-#variables
+#anything with an astricks(*) is what we need to learn
+#variables*
 x = "this is a variable"
 
-#print command
+#print command*
 print("this with send a message")
 
-#inputs
+#inputs*
 x = input("this is where you can get the user to type stuff: ")
 
-#if, elif and else
+#if, elif and else*
 if x == "this is a variable":
     print("try changing the variable and see the result")
 elif x == "something":
@@ -15,7 +16,7 @@ elif x == "something":
 else:
     print("this will happen when both the if and elif are false")
 
-#functions
+#functions*
 def define():
     print("defining something will shorten code and make things easier by making a section of code one line")
 define()
@@ -28,12 +29,12 @@ mydictionary = {
 }
 print(mydictionary["a dictionary"])
 
-#while loop
+#while loop*
 while x == "while":
     print("while loops will continue to loop until the condition is false")
     x = input("this is where you can get the user to type stuff: ")
 
-#for in range loop
+#for in range loop*
 for n in range(6):
     print(n)
 
