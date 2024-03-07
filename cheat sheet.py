@@ -94,3 +94,47 @@ elif inp != 5:
 #data types
 data = input("input in any data type: ")
 print(type(data))
+
+#unpacking tuples
+tuple1 = ("this", "will", "be", "unpacked", "and", "become", "a", "variable")
+(it, will, be, assigned, *here) = tuple1
+print(it)
+print(will)
+print(be)
+print(assigned)
+print(here)
+
+#looping tuples
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+#count instances in a tuple
+mytuple = ("things", "in", "here", "will", "be", "repeated", "repeated")
+counted = mytuple.count("repeated")
+print(counted)
+
+#search for a specific item
+thistuple = ("this","has","been","found")
+searching = thistuple.index("found")
+print(searching)
+
+#sets
+set1 = {"this", "is", "a", "set"}
+print(set1)
+
+#adding to sets
+thisset = {"hello","there","good",}
+thisset.add("morning")
+print(thisset)
+
+#clearing a set
+myset = {"this", "will", "disappear"}
+myset.clear()
+print(myset)
+
+#merging sets
+set2 = {"this", "will"}
+set3 = {"be", "merged"}
+z = set2.intersection(set3)
+print(z)
