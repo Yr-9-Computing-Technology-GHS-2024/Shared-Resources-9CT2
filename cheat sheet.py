@@ -138,3 +138,11 @@ set2 = {"this", "will"}
 set3 = {"be", "merged"}
 z = set2.intersection(set3)
 print(z)
+
+#Turning iterables into iterators
+best_tuple = ("this", "will", "become", "an", "iterator")
+iterate = iter(best_tuple)
+
+#Getting the next value in an iterator
+this_tuple = ("I'm","next","no","I","am")
+print(next(this_tuple))
