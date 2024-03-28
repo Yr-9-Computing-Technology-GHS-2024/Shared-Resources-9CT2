@@ -14,9 +14,9 @@ else:
     print("this is path three")
 
 #repetition code repeats over and over
-inp = input("type your password")
+inp = input("type your : ")
 password = "I love max perez"
 while inp not in password:
     print("wrong password")
-    inp = input("type your password")
+    inp = input("type your password: ")
 print("access granted")

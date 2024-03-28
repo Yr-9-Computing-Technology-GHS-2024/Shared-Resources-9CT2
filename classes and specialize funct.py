@@ -22,12 +22,11 @@ print(person1.height)
 print(person1.age)
 
 #class definitions cannot be empty, but if you for some reason have a class definition with no content, put in the pass statement to avoid getting an error.
-class object:
+class object():
     pass
 
 #Classes can also inherit from other classes
 class Student(Person):
-  def __init__(self, height, name, age):
-    super().__init__( height, name, age)
-    self.graduationyear = 2019
-
+    def __init__(self, height, name, age):
+        super().__init__( height, name, age)
+        self.graduationyear = 2019
