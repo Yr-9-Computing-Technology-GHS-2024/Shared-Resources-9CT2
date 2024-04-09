@@ -16,8 +16,8 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 ev3 = EV3Brick()
 
 # Initialize the motors
-rightmotor = motor(port.B)
-leftmotor = motor(port.C)
+right_motor = motor(port.B)
+left_motor = motor(port.C)
 
 # Initialize the sensors
 USsensor = UltrasonicSensor(Port.S4)
