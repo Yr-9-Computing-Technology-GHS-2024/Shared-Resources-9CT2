@@ -84,6 +84,11 @@ mylist = ["this", "will", "be", "sorted"]
 mylist.sort()
 print(mylist)
 
+mydict = [{"name": "Chris", "age": 13},
+           {"name": "Susan", "age": 50}]
+mydict.sort(key=lambda item: item["name"])
+print(mydict)
+
 #equal and not equal to
 inp = int(input("Number? "))
 if inp == 3:
