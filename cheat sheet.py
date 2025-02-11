@@ -29,6 +29,19 @@ mydictionary = {
 }
 print(mydictionary["a dictionary"])
 
+#Turn a List Into A dictionary
+list1 = ["Ten","Twenty","Thirty"]
+list2 = [10,20,30]
+q = dict(zip(list1,list2))
+print(q)
+
+#Merge two dictionaries into one
+dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+
+dict3 = {**dict1, **dict2}
+print(dict3)
+
 #while loop*
 while x == "while":
     print("while loops will continue to loop until the condition is false")
@@ -53,6 +66,7 @@ p1 = Person("John", 36)
 print(p1.name)
 print(p1.age)
 
+#check for errors
 try:
     print(error_maker)
 except:

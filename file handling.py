@@ -20,10 +20,12 @@ f.close()
 #Overwrite the original content
 f = open("demofile3.txt", "w")
 f.write("Woops! I have deleted the content!")
-f.close()
 
 #Create a file
 f = open("myfile.txt", "x")
 
 #Create a new file if it doesn't exist
 f = open("myfile.txt", "w")
+
+#Close a file
+f.close()
