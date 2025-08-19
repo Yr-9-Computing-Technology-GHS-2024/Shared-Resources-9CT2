@@ -1,4 +1,5 @@
-#Classes are object constructrs or blueprints.
+from abc import ABC, abstractmethod
+#Classes are object constructors or blueprints.
 
 #Creating a basic class
 class myclass:
@@ -30,3 +31,49 @@ class Student(Person):
     def __init__(self, height, name, age):
         super().__init__( height, name, age)
         self.graduationyear = 2019
+
+#Classes can store information about an object
+class BankAccount:
+    def __init__(self, Owner_name):
+        self._Owner_name = Owner_name
+
+    def getname(self):
+        return self._Owner_name
+    
+#Class atributes can be altered
+    def set_name(self, new_name):
+        if isinstance(new_name, str):
+            self._Owner_name = new_name
+        else:
+            raise ValueError("Name must be a string.")
+
+Object1 = BankAccount("John Smith")
+Object1.set_name("John Doe")
+print(Object1.getname())
+
+#Abstract classes can be used as a base for other classes 
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
+	
+    @abstractmethod
+    def volume(self):
+        pass
+	
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+		
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+	
+    def area(self):
+        return 3.14 * self.radius ** 2
+     
+    def volume(self):
+        return 0.75*3.14*self.radius**3
