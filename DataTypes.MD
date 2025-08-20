@@ -1,0 +1,1 @@
+Strings: strings are a data type that encompases text and characters. Strings are iterable data since characters can be counted through. To turn a piece of 

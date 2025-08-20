@@ -165,3 +165,22 @@ iterate = iter(best_tuple)
 #Getting the next value in an iterator
 this_tuple = ("I'm","next","no","I","am")
 print(next(this_tuple))
+
+#Make something an iterator(An iterator is data that can be counted through in a finite amount of time)
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+#Strings are also iterables
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
